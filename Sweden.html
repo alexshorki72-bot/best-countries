@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Почему Швеция - идеальная страна для жизни</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #0057B8 0%, #FECB00 50%, #0057B8 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+        .flag-wave {
+            animation: wave 8s ease-in-out infinite;
+        }
+        @keyframes wave {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(2deg); }
+            75% { transform: rotate(-2deg); }
+        }
+        .nature-bg {
+            background: linear-gradient(-45deg, #0057B8, #009FDF, #6ba8ce);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Навигация -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Sweden.svg" alt="Флаг Швеции" class="h-8 flag-wave">
+                    <span class="font-bold text-xl text-gray-800">Удивительная Швеция</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#reasons" class="text-gray-700 hover:text-blue-600 transition-all">Причины</a>
+                    <a href="#stats" class="text-gray-700 hover:text-blue-600 transition-all">Статистика</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-blue-600 transition-all">Отзывы</a>
+                </div>
+                <button class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Герой-секция -->
+    <section class="hero-gradient text-white py-20 md:py-32">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Почему Швеция - идеальная страна для жизни</h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">Страна инноваций, природной красоты и лучшего баланса работы и жизни</p>
+            <a href="#reasons" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition-all inline-block">
+                Узнать причины <i class="fas fa-arrow-down ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Секция причин -->
+    <section id="reasons" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">8 причин почему Швеция исключительна</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Карточка 1 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md card-hover transition-all">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Социальное равенство</h3>
+                    <p class="text-gray-600">Швеция - мировой лидер по гендерному равенству, защите прав ЛГБТ и интеграции иммигрантов. Здесь один из самых низких уровней неравенства в мире.</p>
+                </div>
+                
+                <!-- Карточка 2 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md card-hover transition-all">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Качество жизни</h3>
+                    <p class="text-gray-600">Швеция регулярно входит в топ-5 стран по индексу качества жизни. Чистые города, отличная инфраструктура и высокие стандарты жилья.</p>
+                </div>
+                
+                <!-- Карточка 3 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md card-hover transition-all">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Природа и экология</h3>
+                    <p class="text-gray-600">Право общественного доступа (Allemansrätten) позволяет свободно наслаждаться природой. Швеция - лидер в области устойчивого развития и экологии.</p>
+                </div>
+                
+                <!-- Карточка 4 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md card-hover transition-all">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Work-life баланс</h3>
+                    <p class="text-gray-600">480 дней оплачиваемого декрета, 5 недель отпуска, короткий рабочий день. Шведы знают толк в балансе работы и личной жизни.</p>
+                </div>
+                
+                <!-- Карточка 5 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md card-hover transition-all">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Бесплатное образование</h3>
+                    <p class="text-gray-600">Образование, включая университеты, бесплатно для граждан ЕС. Шведские вузы входят в мировой топ по многим направлениям.</p>
+                </div>
+                
+                <!-- Карточка 6 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md card-hover transition-all">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Инновации</h3>
+                    <p class="text-gray-600">Родина Spotify, Skype, Minecraft и IKEA. Швеция - мировой лидер в IT, стартапах и инновационных технологиях.</p>
+                </div>
+                
+                <!-- Карточка 7 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md card-hover transition-all">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Здравоохранение</h3>
+                    <p class="text-gray-600">Одна из лучших систем здравоохранения в мире с доступными медицинскими услугами для всех жителей.</p>
+                </div>
+                
+                <!-- Карточка 8 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md card-hover transition-all">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Безопасность</h3>
+                    <p class="text-gray-600">Низкий уровень преступности, прозрачные государственные институты и высокий уровень доверия в обществе.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Статистика -->
+    <section id="stats" class="py-20 nature-bg text-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Швеция в цифрах</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Статистика 1 -->
+                <div class="bg-white bg-opacity-10 rounded-xl p-6 shadow-md text-center backdrop-filter backdrop-blur-sm">
+                    <div class="text-5xl font-bold mb-3">3</div>
+                    <h3 class="text-lg font-semibold mb-2">Счастье</h3>
+                    <p class="text-blue-200">Место в World Happiness Report 2023</p>
+                </div>
+                
+                <!-- Статистика 2 -->
+                <div class="bg-white bg-opacity-10 rounded-xl p-6 shadow-md text-center backdrop-filter backdrop-blur-sm">
+                    <div class="text-5xl font-bold mb-3">480</div>
+                    <h3 class="text-lg font-semibold mb-2">Дней декрета</h3>
+                    <p class="text-blue-200">Оплачиваемый отпуск по уходу за ребенком</p>
+                </div>
+                
+                <!-- Статистика 3 -->
+                <div class="bg-white bg-opacity-10 rounded-xl p-6 shadow-md text-center backdrop-filter backdrop-blur-sm">
+                    <div class="text-5xl font-bold mb-3">100%</div>
+                    <h3 class="text-lg font-semibold mb-2">Переработка</h3>
+                    <p class="text-blue-200">Швеция перерабатывает 99% отходов</p>
+                </div>
+                
+                <!-- Статистика 4 -->
+                <div class="bg-white bg-opacity-10 rounded-xl p-6 shadow-md text-center backdrop-filter backdrop-blur-sm">
+                    <div class="text-5xl font-bold mb-3">5</div>
+                    <h3 class="text-lg font-semibold mb-2">Недели отпуска</h3>
+                    <p class="text-blue-200">Минимальный оплачиваемый отпуск</p>
+                </div>
+            </div>
+            
+            <div class="mt-16 bg-white bg-opacity-10 rounded-xl p-8 shadow-lg backdrop-filter backdrop-blur-sm">
+                <h3 class="text-2xl font-bold mb-6">Основные преимущества качества жизни</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <div class="flex items-start mb-4">
+                            <div class="text-white mr-4 mt-1">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Сильная социальная защита</h4>
+                                <p class="text-blue-200">Всеобщее здравоохранение, образование и поддержка на всех этапах жизни.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start mb-4">
+                            <div class="text-white mr-4 mt-1">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Высокие зарплаты</h4>
+                                <p class="text-blue-200">Один из самых высоких уровней доходов в Европе.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-start mb-4">
+                            <div class="text-white mr-4 mt-1">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Чистота и экология</h4>
+                                <p class="text-blue-200">Чистейшая вода, воздух и ответственное отношение к природе.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start mb-4">
+                            <div class="text-white mr-4 mt-1">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Толерантное общество</h4>
+                                <p class="text-blue-200">Одно из самых открытых и толерантных обществ в мире.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">Что говорят о Швеции</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Отзыв 1 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-blue-600 text-2xl mr-3">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="text-gray-600 italic">"Шведский подход к работе изменил мою жизнь - никаких переработок, уважение к личному времени и потрясающий work-life баланс."</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Елена" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Елена Петрова</h4>
+                            <p class="text-gray-600 text-sm">IT-специалист из России</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Отзыв 2 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-blue-600 text-2xl mr-3">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="text-gray-600 italic">"Как родитель, я ценю шведскую систему поддержки семей: длительный декрет, качественные детские сады и школы, безопасную среду для детей."</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Иван" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Иван Соколов</h4>
+                            <p class="text-gray-600 text-sm">Отец двоих детей из Беларуси</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Отзыв 3 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-blue-600 text-2xl mr-3">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="text-gray-600 italic">"Швеция дала мне возможность быть собой без страха осуждения. Здесь я чувствую себя защищенной и принятой такой, какая я есть."</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Анна" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Анна Кузнецова</h4>
+                            <p class="text-gray-600 text-sm">Дизайнер из Украины</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   

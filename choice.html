@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Как выбирали топ-10 стран для проживания</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .criteria-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .methodology-step {
+            position: relative;
+            padding-left: 2.5rem;
+        }
+        .methodology-step:before {
+            content: "";
+            position: absolute;
+            left: 0.75rem;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background-color: #3B82F6;
+        }
+        .methodology-step:last-child:before {
+            height: 1.5rem;
+        }
+        .step-number {
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            background-color: #3B82F6;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <div class="container mx-auto px-4 py-12 max-w-6xl">
+        <!-- Header -->
+        <header class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Как выбирали топ-10 стран для проживания</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Подробное объяснение методологии и критериев отбора
+            </p>
+        </header>
+
+        <!-- Methodology Section -->
+        <section class="mb-16 bg-white rounded-xl shadow-md p-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Методология отбора</h2>
+            
+            <div class="space-y-8">
+                <!-- Step 1 -->
+                <div class="methodology-step">
+                    <div class="step-number">1</div>
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-3">Определение ключевых критериев</h3>
+                    <p class="text-gray-600 mb-4">
+                        Мы проанализировали 25 международных рейтингов и исследований качества жизни, чтобы выделить наиболее значимые показатели для комфортного проживания.
+                    </p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="methodology-step">
+                    <div class="step-number">2</div>
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-3">Сбор данных</h3>
+                    <p class="text-gray-600 mb-4">
+                        Использовались данные из авторитетных источников:
+                    </p>
+                    <ul class="list-disc pl-5 text-gray-600 space-y-2 mb-4">
+                        <li>Всемирный банк (экономические показатели)</li>
+                        <li>ООН (индекс человеческого развития)</li>
+                        <li>Всемирная организация здравоохранения</li>
+                        <li>Индекс счастья ООН</li>
+                        <li>Global Peace Index</li>
+                        <li>OECD Better Life Index</li>
+                    </ul>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="methodology-step">
+                    <div class="step-number">3</div>
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-3">Нормализация данных</h3>
+                    <p class="text-gray-600 mb-4">
+                        Все показатели были приведены к единой шкале (0-100) для корректного сравнения. Учитывались:
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-blue-700 mb-2"><i class="fas fa-chart-line mr-2"></i>Абсолютные значения</h4>
+                            <p class="text-gray-600">ВВП, средние зарплаты, продолжительность жизни</p>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-green-700 mb-2"><i class="fas fa-percentage mr-2"></i>Относительные показатели</h4>
+                            <p class="text-gray-600">Уровень преступности, доступность жилья, экология</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="methodology-step">
+                    <div class="step-number">4</div>
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-3">Взвешивание критериев</h3>
+                    <p class="text-gray-600 mb-4">
+                        Каждому критерию был присвоен вес на основе опроса экспертов по миграции и качеству жизни:
+                    </p>
+                    <div class="overflow-x-auto">
+                        <table class="w-full border-collapse">
+                            <thead>
+                                <tr class="bg-gray-100">
+                                    <th class="py-3 px-4 text-left font-semibold text-gray-700">Критерий</th>
+                                    <th class="py-3 px-4 text-center font-semibold text-gray-700">Вес</th>
+                                    <th class="py-3 px-4 text-left font-semibold text-gray-700">Описание</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr>
+                                    <td class="py-3 px-4">Экономическая стабильность</td>
+                                    <td class="py-3 px-4 text-center font-medium">20%</td>
+                                    <td class="py-3 px-4 text-gray-600">ВВП, инфляция, безработица</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4">Здравоохранение</td>
+                                    <td class="py-3 px-4 text-center font-medium">18%</td>
+                                    <td class="py-3 px-4 text-gray-600">Доступность и качество медпомощи</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4">Образование</td>
+                                    <td class="py-3 px-4 text-center font-medium">15%</td>
+                                    <td class="py-3 px-4 text-gray-600">Уровень школ и университетов</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4">Безопасность</td>
+                                    <td class="py-3 px-4 text-center font-medium">15%</td>
+                                    <td class="py-3 px-4 text-gray-600">Уровень преступности, терроризм</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4">Экология</td>
+                                    <td class="py-3 px-4 text-center font-medium">12%</td>
+                                    <td class="py-3 px-4 text-gray-600">Качество воздуха, воды, природа</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4">Социальная защита</td>
+                                    <td class="py-3 px-4 text-center font-medium">10%</td>
+                                    <td class="py-3 px-4 text-gray-600">Пенсии, пособия, поддержка</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4">Культура и досуг</td>
+                                    <td class="py-3 px-4 text-center font-medium">10%</td>
+                                    <td class="py-3 px-4 text-gray-600">Развлечения, музеи, спорт</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <!-- Step 5 -->
+                <div class="methodology-step">
+                    <div class="step-number">5</div>
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-3">Финальный расчет</h3>
+                    <p class="text-gray-600">
+                        Для каждой страны рассчитывался интегральный показатель качества жизни по формуле:<br>
+                        <code class="bg-gray-100 px-2 py-1 rounded text-sm font-mono">
+                            Общий балл = (Экономика×0.2) + (Здравоохранение×0.18) + (Образование×0.15) + ... + (Культура×0.1)
+                        </code>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Criteria Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Ключевые критерии оценки</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="criteria-card bg-white rounded-xl shadow-md p-6 transition-all duration-300">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-chart-line text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Экономика</h3>
+                    <p class="text-gray-600 mb-3">
+                        ВВП на душу населения, уровень безработицы, инфляция, экономическая стабильность
+                    </p>
+                    <div class="text-sm text-blue-600 font-medium">
+                        Источники: Всемирный банк, МВФ
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="criteria-card bg-white rounded-xl shadow-md p-6 transition-all duration-300">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-heartbeat text-green-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Здравоохранение</h3>
+                    <p class="text-gray-600 mb-3">
+                        Ожидаемая продолжительность жизни, доступность медицины, качество услуг, расходы на здравоохранение
+                    </p>
+                    <div class="text-sm text-green-600 font-medium">
+                        Источники: ВОЗ, OECD
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="criteria-card bg-white rounded-xl shadow-md p-6 transition-all duration-300">
+                    <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-graduation-cap text-purple-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Образование</h3>
+                    <p class="text-gray-600 mb-3">
+                        Уровень грамотности, качество школ и университетов, доступность образования, PISA рейтинги
+                    </p>
+                    <div class="text-sm text-purple-600 font-medium">
+                        Источники: ООН, OECD
+                    </div>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="criteria-card bg-white rounded-xl shadow-md p-6 transition-all duration-300">
+                    <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-shield-alt text-yellow-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Безопасность</h3>
+                    <p class="text-gray-600 mb-3">
+                        Уровень преступности, терроризм, политическая стабильность, правопорядок
+                    </p>
+                    <div class="text-sm text-yellow-600 font-medium">
+                        Источники: Global Peace Index
+                    </div>
+                </div>
+                
+                <!-- Card 5 -->
+                <div class="criteria-card bg-white rounded-xl shadow-md p-6 transition-all duration-300">
+                    <div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-leaf text-teal-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Экология</h3>
+                    <p class="text-gray-600 mb-3">
+                        Качество воздуха и воды, переработка отходов, использование возобновляемой энергии, природные зоны
+                    </p>
+                    <div class="text-sm text-teal-600 font-medium">
+                        Источники: EPI, OECD
+                    </div>
+                </div>
+                
+                <!-- Card 6 -->
+                <div class="criteria-card bg-white rounded-xl shadow-md p-6 transition-all duration-300">
+                    <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-smile text-red-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Качество жизни</h3>
+                    <p class="text-gray-600 mb-3">
+                        Удовлетворенность жизнью, баланс работы и отдыха, социальные связи, инфраструктура
+                    </p>
+                    <div class="text-sm text-red-600 font-medium">
+                        Источники: World Happiness Report
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Limitations Section -->
+        <section class="bg-white rounded-xl shadow-md p-8 mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Ограничения исследования</h2>
+            
+            <div class="space-y-4">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 mt-1 mr-4 text-red-500">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-700 mb-2">Субъективность весов</h3>
+                        <p class="text-gray-600">
+                            Распределение весов между критериями может варьироваться в зависимости от личных приоритетов. Для мигрантов важны одни факторы, для пенсионеров — другие.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 mt-1 mr-4 text-yellow-500">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-700 mb-2">Запаздывание данных</h3>
+                        <p class="text-gray-600">
+                            Некоторые показатели (особенно экономические) публикуются с задержкой в 1-2 года и могут не отражать текущую ситуацию.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 mt-1 mr-4 text-blue-500">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-700 mb-2">Региональные различия</h3>
+                        <p class="text-gray-600">
+                            В крупных странах (США, Канада, Австралия) качество жизни может значительно отличаться между регионами и городами.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 mt-1 mr-4 text-purple-500">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-700 mb-2">Культурные факторы</h3>
+                        <p class="text-gray-600">
+                            Некоторые аспекты (например, климат или менталитет) сложно измерить количественно, но они сильно влияют на комфорт проживания.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customization Section -->
+        <section class="bg-blue-50 rounded-xl p-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-6 md:mb-0 md:pr-8">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Персонализируйте рейтинг под свои нужды</h2>
+                    <p class="text-gray-600 mb-4">
+                        Наш инструмент позволяет настроить веса критериев и получить персонализированный рейтинг стран.
+                    </p>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-lg transition-colors">
+                        Попробовать персонализацию
+                    </button>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-4">Пример разных приоритетов:</h3>
+                        
+                        <div class="mb-4">
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Для семьи с детьми</span>
+                                <span class="text-blue-600 font-medium">Образование 25%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 25%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Для пенсионеров</span>
+                                <span class="text-green-600 font-medium">Здравоохранение 30%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-green-600 h-2 rounded-full" style="width: 30%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Для IT-специалистов</span>
+                                <span class="text-purple-600 font-medium">Зарплаты 22%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-purple-600 h-2 rounded-full" style="width: 22%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Simple animation for criteria cards
+        document.querySelectorAll('.criteria-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+            });
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = '';
+            });
+        });
+    </script>
+</body>
+</html>

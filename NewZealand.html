@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Почему Новая Зеландия - идеальная страна для жизни</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #00247D 0%, #FFFFFF 50%, #00247D 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+        .flag-wave {
+            animation: wave 8s ease-in-out infinite;
+        }
+        @keyframes wave {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(2deg); }
+            75% { transform: rotate(-2deg); }
+        }
+        .nature-bg {
+            background: linear-gradient(-45deg, #00247D, #006A4E, #6ba8ce);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Навигация -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg" alt="Флаг Новой Зеландии" class="h-8 flag-wave">
+                    <span class="font-bold text-xl text-gray-800">Удивительная Новая Зеландия</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#reasons" class="text-gray-700 hover:text-blue-600 transition-all">Причины</a>
+                    <a href="#stats" class="text-gray-700 hover:text-blue-600 transition-all">Статистика</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-blue-600 transition-all">Отзывы</a>
+                </div>
+                <button class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Герой-секция -->
+    <section class="hero-gradient text-white py-20 md:py-32">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Почему Новая Зеландия - идеальная страна для жизни</h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">Страна киви, потрясающей природы и одного из самых высоких уровней жизни в мире</p>
+            <a href="#reasons" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition-all inline-block">
+                Узнать причины <i class="fas fa-arrow-down ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Секция причин -->
+    <section id="reasons" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">8 причин почему Новая Зеландия исключительна</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Карточка 1 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md card-hover transition-all">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Безопасность</h3>
+                    <p class="text-gray-600">Новая Зеландия занимает 2 место в Глобальном индексе миролюбия. Нет опасных животных, низкий уровень преступности и коррупции :cite[1]:cite[7].</p>
+                </div>
+                
+                <!-- Карточка 2 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md card-hover transition-all">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Природа и экология</h3>
+                    <p class="text-gray-600">Одна из самых чистых стран мира с уникальными ландшафтами - от ледников до тропических лесов. 80% электроэнергии из возобновляемых источников :cite[1]:cite[5].</p>
+                </div>
+                
+                <!-- Карточка 3 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md card-hover transition-all">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Качество жизни</h3>
+                    <p class="text-gray-600">Входит в топ-10 стран по уровню жизни. Высокие зарплаты, хорошая медицина и образование, социальная защищенность :cite[1]:cite[5].</p>
+                </div>
+                
+                <!-- Карточка 4 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md card-hover transition-all">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Демократия и права</h3>
+                    <p class="text-gray-600">Одна из наименее коррумпированных стран с честными выборами, свободой слова и независимыми судами :cite[3]:cite[7].</p>
+                </div>
+                
+                <!-- Карточка 5 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md card-hover transition-all">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Work-life баланс</h3>
+                    <p class="text-gray-600">Короткая рабочая неделя, длинные отпуска, непринужденный образ жизни. Новозеландцы ценят свободное время больше карьеры :cite[5]:cite[7].</p>
+                </div>
+                
+                <!-- Карточка 6 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md card-hover transition-all">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Образование</h3>
+                    <p class="text-gray-600">Одна из лучших образовательных систем мира по версии PISA. Доступные цены по сравнению с другими англоязычными странами :cite[1]:cite[5].</p>
+                </div>
+                
+                <!-- Карточка 7 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md card-hover transition-all">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Кухня и продукты</h3>
+                    <p class="text-gray-600">Свежие местные продукты высокого качества. Уникальная "от фермы к столу" культура питания с влиянием тихоокеанских традиций :cite[7].</p>
+                </div>
+                
+                <!-- Карточка 8 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md card-hover transition-all">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Дружелюбные люди</h3>
+                    <p class="text-gray-600">Новозеландцы известны своим гостеприимством, открытостью и толерантностью. Легко найти новых друзей и чувствовать себя как дома :cite[3]:cite[7].</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Статистика -->
+    <section id="stats" class="py-20 nature-bg text-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Новая Зеландия в цифрах</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Статистика 1 -->
+                <div class="bg-white bg-opacity-10 rounded-xl p-6 shadow-md text-center backdrop-filter backdrop-blur-sm">
+                    <div class="text-5xl font-bold mb-3">2</div>
+                    <h3 class="text-lg font-semibold mb-2">Безопасность</h3>
+                    <p class="text-blue-200">Место в Глобальном индексе миролюбия</p>
+                </div>
+                
+                <!-- Статистика 2 -->
+                <div class="bg-white bg-opacity-10 rounded-xl p-6 shadow-md text-center backdrop-filter backdrop-blur-sm">
+                    <div class="text-5xl font-bold mb-3">81.8</div>
+                    <h3 class="text-lg font-semibold mb-2">Продолжительность жизни</h3>
+                    <p class="text-blue-200">Один из самых высоких показателей в мире</p>
+                </div>
+                
+                <!-- Статистика 3 -->
+                <div class="bg-white bg-opacity-10 rounded-xl p-6 shadow-md text-center backdrop-filter backdrop-blur-sm">
+                    <div class="text-5xl font-bold mb-3">80%</div>
+                    <h3 class="text-lg font-semibold mb-2">Экология</h3>
+                    <p class="text-blue-200">Электроэнергия из возобновляемых источников</p>
+                </div>
+                
+                <!-- Статистика 4 -->
+                <div class="bg-white bg-opacity-10 rounded-xl p-6 shadow-md text-center backdrop-filter backdrop-blur-sm">
+                    <div class="text-5xl font-bold mb-3">1</div>
+                    <h3 class="text-lg font-semibold mb-2">Коррупция</h3>
+                    <p class="text-blue-200">Наименее коррумпированная страна наравне с Данией</p>
+                </div>
+            </div>
+            
+            <div class="mt-16 bg-white bg-opacity-10 rounded-xl p-8 shadow-lg backdrop-filter backdrop-blur-sm">
+                <h3 class="text-2xl font-bold mb-6">Основные преимущества качества жизни</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <div class="flex items-start mb-4">
+                            <div class="text-white mr-4 mt-1">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Бесплатная медицина</h4>
+                                <p class="text-blue-200">Резиденты и граждане получают бесплатное медицинское обслуживание высокого качества :cite[3]:cite[7].</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start mb-4">
+                            <div class="text-white mr-4 mt-1">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Простота ведения бизнеса</h4>
+                                <p class="text-blue-200">1 место по простоте ведения бизнеса с минимальной бюрократией :cite[1].</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-start mb-4">
+                            <div class="text-white mr-4 mt-1">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Умеренный климат</h4>
+                                <p class="text-blue-200">Нет экстремальных температур - от 0°C зимой до 30°C летом :cite[1]:cite[6].</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start mb-4">
+                            <div class="text-white mr-4 mt-1">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Простая иммиграция</h4>
+                                <p class="text-blue-200">Различные варианты виз для квалифицированных специалистов :cite[5].</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">Что говорят о Новой Зеландии</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Отзыв 1 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-blue-600 text-2xl mr-3">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="text-gray-600 italic">"После России ездить по новозеландским дорогам - одно удовольствие! Большинство людей выполняют правила дорожного движения, нет агрессивного вождения. Только тут я перестал проверять карманы в общественных местах каждые 5 минут."</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Николай" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Николай Рысёв</h4>
+                            <p class="text-gray-600 text-sm">Переехал в 2017 году :cite[3]</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Отзыв 2 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-blue-600 text-2xl mr-3">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="text-gray-600 italic">"Новозеландцы - одни из самых простых, искренних и гостеприимных людей в мире. Жить здесь - значит относиться к жизни не слишком серьезно, с здоровым балансом между работой и личной жизнью."</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Ольга" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Ольга Виноградова</h4>
+                            <p class="text-gray-600 text-sm">Журналист :cite[7]</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Отзыв 3 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md">
+                    <

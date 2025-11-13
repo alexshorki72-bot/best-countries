@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Канада - лучшая страна для жизни</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@preline/preline@2.0.0/dist/preline.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <base target="_self">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 0.8s ease forwards;
+        }
+        .hover-scale:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .card-image {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+    <div class="container mx-auto px-4 py-8 max-w-6xl">
+        <!-- Header with User Avatar -->
+        <header class="flex items-center justify-between mb-12">
+            <div class="flex items-center">
+                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="User Avatar" 
+                     class="w-16 h-16 rounded-full border-4 border-blue-500 mr-4">
+                <div>
+                    <h1 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white">
+                        Канада - лучшая страна для жизни
+                    </h1>
+                    <p class="text-lg text-gray-600 dark:text-gray-300">8 веских причин</p>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/1200px-Flag_of_Canada_%28Pantone%29.svg.png" 
+                     alt="Флаг Канады" class="h-16">
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Reason 1 -->
+            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden hover-scale transition-all duration-300 fade-in">
+                <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
+                     alt="Канадская медицина" class="card-image">
+                <div class="p-5">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-blue-100 dark:bg-blue-900 p-2 rounded-full mr-3">
+                            <i class="fas fa-heartbeat text-blue-500 dark:text-blue-300"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-white">1. Бесплатная медицина</h3>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        Канадская система здравоохранения обеспечивает бесплатное медицинское обслуживание для всех граждан и постоянных жителей.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Reason 2 -->
+            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden hover-scale transition-all duration-300 fade-in">
+                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
+                     alt="Образование в Канаде" class="card-image">
+                <div class="p-5">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-green-100 dark:bg-green-900 p-2 rounded-full mr-3">
+                            <i class="fas fa-graduation-cap text-green-500 dark:text-green-300"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-white">2. Качественное образование</h3>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        Канадские университеты входят в топ мировых рейтингов, а образование доступно как для граждан, так и для иностранцев.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Reason 3 -->
+            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden hover-scale transition-all duration-300 fade-in">
+                <img src="https://images.unsplash.com/photo-1505935428862-770b6f24f629?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1167&q=80" 
+                     alt="Мультикультурная Канада" class="card-image">
+                <div class="p-5">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-yellow-100 dark:bg-yellow-900 p-2 rounded-full mr-3">
+                            <i class="fas fa-globe-americas text-yellow-500 dark:text-yellow-300"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-white">3. Мультикультурное общество</h3>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        Канада гордится своей политикой мультикультурализма и принимает иммигрантов со всего мира.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Reason 4 -->
+            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden hover-scale transition-all duration-300 fade-in">
+                <img src="https://images.unsplash.com/photo-1500380804539-4e1e8c1e7118?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
+                     alt="Безопасность в Канаде" class="card-image">
+                <div class="p-5">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-red-100 dark:bg-red-900 p-2 rounded-full mr-3">
+                            <i class="fas fa-shield-alt text-red-500 dark:text-red-300"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-white">4. Безопасность и стабильность</h3>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        Канада - одна из самых безопасных стран мира с низким уровнем преступности и стабильной политической системой.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Reason 5 -->
+            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden hover-scale transition-all duration-300 fade-in">
+                <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
+                     alt="Природа Канады" class="card-image">
+                <div class="p-5">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-purple-100 dark:bg-purple-900 p-2 rounded-full mr-3">
+                            <i class="fas fa-mountain text-purple-500 dark:text-purple-300"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-white">5. Уникальная природа</h3>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        От Скалистых гор до Великих озер - Канада предлагает невероятные природные ландшафты и экологически чистую среду.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Reason 6 -->
+            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden hover-scale transition-all duration-300 fade-in">
+                <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" 
+                     alt="Экономика Канады" class="card-image">
+                <div class="p-5">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-indigo-100 dark:bg-indigo-900 p-2 rounded-full mr-3">
+                            <i class="fas fa-chart-line text-indigo-500 dark:text-indigo-300"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-white">6. Сильная экономика</h3>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        Канада имеет стабильную экономику с высоким уровнем жизни и возможностями для профессионального роста.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Reason 7 -->
+            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden hover-scale transition-all duration-300 fade-in">
+                <img src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
+                     alt="Баланс работы и жизни" class="card-image">
+                <div class="p-5">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-pink-100 dark:bg-pink-900 p-2 rounded-full mr-3">
+                            <i class="fas fa-balance-scale text-pink-500 dark:text-pink-300"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-white">7. Баланс работы и жизни</h3>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        Канадцы ценят баланс между работой и личной жизнью, имея щедрые отпуска и социальные гарантии.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Reason 8 -->
+            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden hover-scale transition-all duration-300 fade-in">
+                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
+                     alt="Дружелюбные канадцы" class="card-image">
+                <div class="p-5">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-teal-100 dark:bg-teal-900 p-2 rounded-full mr-3">
+                            <i class="fas fa-smile text-teal-500 dark:text-teal-300"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-white">8. Дружелюбные люди</h3>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        Канадцы известны своей вежливостью, толерантностью и готовностью помочь, что делает адаптацию легче.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+<!-- Footer with CTA -->
+<footer class="mt-16 text-center fade-in">
+    <div class="bg-blue-50 dark:bg-blue-900/30 rounded-xl p-8">
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-4">Хотите узнать больше о жизни в Канаде?</h2>
+        
+        <!-- Кнопка с ссылкой на программу Working Holiday -->
+        <a href="https://uiscanada.com/lp/en/global/working-holiday/?Campaign_source=Google&UTM1=22580814926&UTM2=178560175086&UTM3=753326372832&UTM4=working%20holiday%20visa%20canada&UTM5=c&UTM6=kwd-49319793&UTM7=b&UTM8=&UTM9=Cj0KCQjwjo7DBhCrARIsACWauSnHzUKVAbKFp4elM3tQvuLMyRsxUC0sstQHpGxIpeGYfqXpxErjBoYaAvDBEALw_wcB&UTM10=Search&UTM11=working-holiday&UTM12=lp-en-global-working-holiday&utm_campaign=search-netherlands-whv-br&Visa_Type=WHV&Desk=&gad_source=1&gad_campaignid=22580814926&gbraid=0AAAAADE1-8dzPduY1hlAd4kRpEeMjEtNm&gclid=Cj0KCQjwjo7DBhCrARIsACWauSnHzUKVAbKFp4elM3tQvuLMyRsxUC0sstQHpGxIpeGYfqXpxErjBoYaAvDBEALw_wcB#"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="inline-block px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors duration-300 shadow-lg hover:shadow-xl">
+            Связаться с нами
+        </a>
+    </div>
+    
+    <div class="mt-8 text-gray-500 dark:text-gray-400">
+        <p>© 2023 Канада - страна возможностей. Все права защищены.</p>
+    </div>
+</footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dark/light mode based on system preference
+            if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.documentElement.classList.add('dark');
+            }
+
+            // Button click handler
+            document.getElementById('contactBtn').addEventListener('click', function(e) {
+                e.preventDefault();
+                alert('Форма связи будет открыта в следующем шаге');
+                // Здесь можно добавить логику открытия модального окна или перенаправления
+            });
+
+            // Staggered animation for cards
+            const cards = document.querySelectorAll('.fade-in');
+            cards.forEach((card, index) => {
+                card.style.animationDelay = `${index * 0.15}s`;
+            });
+        });
+    </script>
+</body>
+</html>

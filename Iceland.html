@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Почему Исландия - уникальная страна для жизни</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #02529C 0%, #DC1E35 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+        .flag-wave {
+            animation: wave 8s ease-in-out infinite;
+        }
+        @keyframes wave {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(2deg); }
+            75% { transform: rotate(-2deg); }
+        }
+        .aurora-bg {
+            background: linear-gradient(-45deg, #0d324d, #1e3b70, #3b8d99);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Навигация -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Iceland.svg" alt="Флаг Исландии" class="h-8 flag-wave">
+                    <span class="font-bold text-xl text-gray-800">Удивительная Исландия</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#reasons" class="text-gray-700 hover:text-blue-600 transition-all">Причины</a>
+                    <a href="#stats" class="text-gray-700 hover:text-blue-600 transition-all">Статистика</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-blue-600 transition-all">Отзывы</a>
+                </div>
+                <button class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Герой-секция -->
+    <section class="hero-gradient text-white py-20 md:py-32">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Почему Исландия - уникальная страна для жизни</h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">Откройте для себя землю огня и льда, которая сочетает потрясающую природу с высочайшим качеством жизни</p>
+            <a href="#reasons" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition-all inline-block">
+                Узнать причины <i class="fas fa-arrow-down ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Секция причин -->
+    <section id="reasons" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">8 причин почему Исландия исключительна</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Карточка 1 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md card-hover transition-all">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-globe-europe"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Уникальная природа</h3>
+                    <p class="text-gray-600">Гейзеры, водопады, ледники, вулканы и северное сияние - в Исландии сосредоточено больше природных чудес, чем где-либо еще на планете.</p>
+                </div>
+                
+                <!-- Карточка 2 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md card-hover transition-all">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-venus-mars"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Гендерное равенство</h3>
+                    <p class="text-gray-600">Исландия 12 лет подряд занимает первое место в мире по гендерному равенству по версии Всемирного экономического форума.</p>
+                </div>
+                
+                <!-- Карточка 3 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md card-hover transition-all">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Чистая энергия</h3>
+                    <p class="text-gray-600">100% электроэнергии производится из возобновляемых источников (гидро- и геотермальная энергия).</p>
+                </div>
+                
+                <!-- Карточка 4 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md card-hover transition-all">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Безопасность</h3>
+                    <p class="text-gray-600">Одна из самых безопасных стран мира с минимальным уровнем преступности и высоким доверием в обществе.</p>
+                </div>
+                
+                <!-- Карточка 5 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md card-hover transition-all">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Здоровье</h3>
+                    <p class="text-gray-600">Высококачественная медицина и одна из самых высоких продолжительностей жизни в мире (83 года).</p>
+                </div>
+                
+                <!-- Карточка 6 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md card-hover transition-all">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Образование</h3>
+                    <p class="text-gray-600">Бесплатное образование для всех граждан, включая университетское, с акцентом на креативность и инновации.</p>
+                </div>
+                
+                <!-- Карточка 7 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md card-hover transition-all">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Уникальная кухня</h3>
+                    <p class="text-gray-600">Органические местные продукты, чистейшая вода и традиционные блюда, сохранившиеся с эпохи викингов.</p>
+                </div>
+                
+                <!-- Карточка 8 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md card-hover transition-all">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Культура</h3>
+                    <p class="text-gray-600">Богатое культурное наследие, включая саги викингов, современную музыку и литературу, и уникальный исландский язык.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Статистика -->
+    <section id="stats" class="py-20 aurora-bg text-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Исландия в цифрах</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Статистика 1 -->
+                <div class="bg-white bg-opacity-10 rounded-xl p-6 shadow-md text-center backdrop-filter backdrop-blur-sm">
+                    <div class="text-5xl font-bold mb-3">1</div>
+                    <h3 class="text-lg font-semibold mb-2">Гендерное равенство</h3>
+                    <p class="text-blue-200">Global Gender Gap Index 2023</p>
+                </div>
+                
+                <!-- Статистика 2 -->
+                <div class="bg-white bg-opacity-10 rounded-xl p-6 shadow-md text-center backdrop-filter backdrop-blur-sm">
+                    <div class="text-5xl font-bold mb-3">3</div>
+                    <h3 class="text-lg font-semibold mb-2">Самая мирная страна</h3>
+                    <p class="text-blue-200">Global Peace Index 2023</p>
+                </div>
+                
+                <!-- Статистика 3 -->
+                <div class="bg-white bg-opacity-10 rounded-xl p-6 shadow-md text-center backdrop-filter backdrop-blur-sm">
+                    <div class="text-5xl font-bold mb-3">100%</div>
+                    <h3 class="text-lg font-semibold mb-2">Возобновляемая энергия</h3>
+                    <p class="text-blue-200">Электричество из чистых источников</p>
+                </div>
+                
+                <!-- Статистика 4 -->
+                <div class="bg-white bg-opacity-10 rounded-xl p-6 shadow-md text-center backdrop-filter backdrop-blur-sm">
+                    <div class="text-5xl font-bold mb-3">83</div>
+                    <h3 class="text-lg font-semibold mb-2">Продолжительность жизни</h3>
+                    <p class="text-blue-200">Средняя ожидаемая продолжительность</p>
+                </div>
+            </div>
+            
+            <div class="mt-16 bg-white bg-opacity-10 rounded-xl p-8 shadow-lg backdrop-filter backdrop-blur-sm">
+                <h3 class="text-2xl font-bold mb-6">Основные преимущества качества жизни</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <div class="flex items-start mb-4">
+                            <div class="text-white mr-4 mt-1">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Сильная социальная защита</h4>
+                                <p class="text-blue-200">Всеобщее здравоохранение, образование и поддержка семей.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start mb-4">
+                            <div class="text-white mr-4 mt-1">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Экологическая сознательность</h4>
+                                <p class="text-blue-200">Лидер в устойчивом развитии и защите природы.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-start mb-4">
+                            <div class="text-white mr-4 mt-1">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Высокие зарплаты</h4>
+                                <p class="text-blue-200">Один из самых высоких уровней доходов в мире.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start mb-4">
+                            <div class="text-white mr-4 mt-1">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Низкая плотность населения</h4>
+                                <p class="text-blue-200">Всего 3 человека на квадратный километр.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">Что говорят об Исландии</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Отзыв 1 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-blue-600 text-2xl mr-3">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="text-gray-600 italic">"Исландия изменила мое представление о том, как может выглядеть общество. Здесь женщины и мужчины действительно равны, природа потрясающая, а качество жизни невероятное."</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Мария" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Мария Иванова</h4>
+                            <p class="text-gray-600 text-sm">Дизайнер из России</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Отзыв 2 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-blue-600 text-2xl mr-3">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="text-gray-600 italic">"Как ученый, я ценю исландский подход к инновациям и образованию. Университеты здесь прекрасно оборудованы, а исследования поддерживаются государством."</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Алексей" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Алексей Петренко</h4>
+                            <p class="text-gray-600 text-sm">Исследователь из Украины</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Отзыв 3 -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-blue-600 text-2xl mr-3">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="text-gray-600 italic">"Мы переехали с детьми и ни разу не пожалели. Чистый воздух, безопасные улицы, отличные школы и невероятная природа прямо за порогом - идеальное место для семьи."</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/72.jpg" alt="Ольга" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Ольга Семенова</h4>
+                            <p class="text-gray-600 text-sm">Мама из Беларуси</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Призыв к действию -->
+<section class="py-16 bg-blue-600 text-white">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Хотите узнать больше о жизни в Исландии?</h2>
+        <p class="text-xl mb-8 max-w-3xl mx-auto">Исландия приветствует квалифицированных специалистов, студентов и исследователей со всего мира.</p>
+        <div class="flex flex-col md:flex-row justify-center gap-4">
+            <!-- Ссылка на иммиграцию -->
+            <a href="https://island.is/en/o/directorate-of-immigration" 
+               target="_blank"
+               rel="noopener noreferrer"
+               class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition-all duration-300 inline-block transform hover:-translate-y-1">
+                Иммиграция <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+            
+            <!-- Ссылка на учебу -->
+            <a href="https://grant-study.com/vysshee-obrazovanie/islandiya" 
+               target="_blank"
+               rel="noopener noreferrer"
+               class="border-2 border-white text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition-all duration-300 inline-block transform hover:-translate-y-1">
+                Учеба в Исландии
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- Подвал -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Об Исландии</h3>
+                    <p class="text-gray-400">Исландия - островное государство в Северной Атлантике с населением около 370 000 человек. Известна своими потрясающими пейзажами, геотермальной активностью и эгалитарным обществом.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Быстрые ссылки</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-all">Официальный сайт Исландии</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-all">Туризм в Исландии</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-all">Работа в Исландии</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-all">Университеты Исландии</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Факты</h3>
+                    <ul class="space-y-2">
+                        <li class="text-gray-400">Население: 376 тыс.</li>
+                        <li class="text-gray-400">Столица: Рейкьявик</li>
+                        <li class="text-gray-400">Язык: Исландский</li>
+                        <li class="text-gray-400">Валюта: Исландская крона (ISK)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Связь</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl transition-all"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl transition-all"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl transition-all"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl transition-all"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <p class="text-gray-400 mt-4">© 2023 Удивительная Исландия. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Простой JavaScript для мобильного меню
+        document.querySelector('button').addEventListener('click', function() {
+            const nav = document.querySelector('.hidden.md\\:flex');
+            nav.classList.toggle('hidden');
+            nav.classList.toggle('flex');
+            nav.classList.toggle('flex-col');
+            nav.classList.toggle('absolute');
+            nav.classList.toggle('top-16');
+            nav.classList.toggle('left-0');
+            nav.classList.toggle('right-0');
+            nav.classList.toggle('bg-white');
+            nav.classList.toggle('p-4');
+            nav.classList.toggle('shadow-lg');
+        });
+
+        // Плавная прокрутка для якорных ссылок
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

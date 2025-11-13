@@ -1,0 +1,667 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Узнайте, почему Швейцария считается одной из лучших стран для жизни. Исследуйте преимущества, статистику и отзывы экспатов.">
+    <meta name="keywords" content="Швейцария, лучшие страны для жизни, переезд в Швейцарию, качество жизни, отзывы экспатов">
+    <meta name="author" content="Ваше имя или название компании">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:title" content="Топ-10 стран для проживания">
+    <meta property="og:description" content="Узнайте, почему Швейцария считается одной из лучших стран для жизни. Исследуйте преимущества, статистику и отзывы экспатов.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ваш-сайт.com">
+    <meta property="og:image" content="https://ваш-сайт.com/path/to/image.jpg">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Топ-10 стран для проживания">
+    <meta name="twitter:description" content="Узнайте, почему Швейцария считается одной из лучших стран для жизни. Исследуйте преимущества, статистику и отзывы экспатов.">
+    <meta name="twitter:image" content="https://ваш-сайт.com/path/to/image.jpg">
+
+    <title>Топ-10 стран для проживания</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .country-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .hero-pattern {
+            background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .mobile-menu {
+            display: none;
+        }
+        .mobile-menu.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+<!-- Header -->
+<header class="bg-white shadow-sm">
+  <div class="container mx-auto px-4 py-6">
+    <div class="flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <i class="fas fa-globe-europe text-3xl text-blue-600"></i>
+        <h1 class="text-2xl font-bold text-gray-800">Лучшие страны для жизни</h1>
+      </div>
+<nav class="hidden md:flex space-x-6 items-center">
+    <a href="#" class="text-gray-600 hover:text-blue-600 transition">Главная</a>
+    <a href="ratings.html" class="text-gray-600 hover:text-blue-600 transition">Рейтинги</a>
+    <a href="comparison.html" class="text-gray-600 hover:text-blue-600 transition">Сравнение</a>
+    <a href="#" class="text-gray-600 hover:text-blue-600 transition">
+        Контакты
+    </a>
+    <span class="text-yellow-500 font-semibold flex items-center">
+        Under the sky
+        <img src="https://raw.githubusercontent.com/Alex768180/under-the-sky/refs/heads/main/sdai_1739683651086.jpg"
+             alt="Cloud" class="ml-5 w-10 h-10" />
+    </span>
+</nav>
+
+      <button class="md:hidden text-gray-600" id="mobile-menu-button">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
+    </div>
+    <div class="mobile-menu md:hidden" id="mobile-menu">
+      <a href="#" class="block py-2 text-gray-600 hover:text-blue-600 transition">Главная</a>
+      <a href="ratings.html" class="block py-2 text-gray-600 hover:text-blue-600 transition">Рейтинги</a>
+      <a href="comparison.html" class="block py-2 text-gray-600 hover:text-blue-600 transition">Сравнение</a>
+      <a href="#" class="block py-2 text-gray-600 hover:text-blue-600 transition flex items-center">
+        Контакты
+        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=16&h=16&q=80"
+             alt="Cloud" class="ml-2 w-4 h-4 align-bottom" />
+      </a>
+      <span class="block py-2 text-yellow-500 font-semibold flex items-center">
+        Under the sky
+        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=16&h=16&q=80"
+             alt="Cloud" class="ml-2 w-4 h-4" />
+      </span>
+    </div>
+  </div>
+</header>
+
+
+    <!-- Hero Section -->
+    <section class="hero-pattern bg-gradient-to-r from-blue-50 to-indigo-50 py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Топ-10 стран для комфортной жизни</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                Исследуйте лучшие страны мира по качеству жизни, безопасности, экономике и уровню счастья
+            </p>
+            <div class="flex justify-center space-x-4">
+                <button onclick="window.location.href='comparison.html'"
+                        class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-md flex items-center">
+                    <i class="fas fa-chart-line mr-2"></i> Сравнить страны
+                </button>
+                <button onclick="window.location.href='choice.html'"
+                        class="bg-white hover:bg-gray-100 text-blue-600 px-6 py-3 rounded-lg font-medium transition shadow-md">
+                    <i class="fas fa-question-circle mr-2"></i> Как выбирали?
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- Intro -->
+        <section class="mb-16">
+            <div class="bg-white rounded-xl shadow-md p-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Критерии отбора</h3>
+                <p class="text-gray-600 mb-6">
+                    Наш рейтинг составлен на основе анализа множества факторов, включая индекс человеческого развития,
+                    уровень ВВП на душу населения, качество медицины и образования, экологию, безопасность и уровень
+                    счастья населения.
+                </p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="bg-blue-50 p-4 rounded-lg flex items-center">
+                        <i class="fas fa-heartbeat text-blue-600 text-2xl mr-3"></i>
+                        <span>Здравоохранение</span>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg flex items-center">
+                        <i class="fas fa-graduation-cap text-blue-600 text-2xl mr-3"></i>
+                        <span>Образование</span>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg flex items-center">
+                        <i class="fas fa-lock text-blue-600 text-2xl mr-3"></i>
+                        <span>Безопасность</span>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg flex items-center">
+                        <i class="fas fa-smile text-blue-600 text-2xl mr-3"></i>
+                        <span>Уровень счастья</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Countries Grid -->
+        <section>
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Топ-10 стран для проживания</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Country 1 -->
+                <div class="country-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <a href="Switzerland.html" class="block">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1504851149312-7a075b496cc7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                 alt="Швейцария" class="w-full h-full object-cover">
+                            <div class="absolute top-0 left-0 bg-gradient-to-t from-black/50 to-transparent w-full h-full"></div>
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <span class="bg-blue-600 text-xs font-semibold px-2 py-1 rounded">#1</span>
+                                <h3 class="text-2xl font-bold mt-2">Швейцария</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                <span class="font-medium">9.8/10</span>
+                            </div>
+                            <span class="text-sm text-gray-500">Европа</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Лидер по качеству жизни с высокими зарплатами, прекрасной экологией и развитой инфраструктурой.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Высокие зарплаты</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Безопасность</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Природа</span>
+                        </div>
+                        <button onclick="window.location.href='Switzerland.html'"
+                                class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg transition">
+                            Подробнее <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Country 2 -->
+                <div class="country-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <a href="Norway.html" class="block">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                 alt="Норвегия" class="w-full h-full object-cover">
+                            <div class="absolute top-0 left-0 bg-gradient-to-t from-black/50 to-transparent w-full h-full"></div>
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <span class="bg-blue-600 text-xs font-semibold px-2 py-1 rounded">#2</span>
+                                <h3 class="text-2xl font-bold mt-2">Норвегия</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                <span class="font-medium">9.7/10</span>
+                            </div>
+                            <span class="text-sm text-gray-500">Европа</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Страна с высочайшим уровнем жизни, социальной защитой и потрясающей северной природой.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Соц. защита</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Экология</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Фьорды</span>
+                        </div>
+                        <button onclick="window.location.href='Norway.html'"
+                                class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg transition">
+                            Подробнее <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Country 3 -->
+                <div class="country-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <a href="Denmark.html" class="block">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1633&q=80"
+                                 alt="Дания" class="w-full h-full object-cover">
+                            <div class="absolute top-0 left-0 bg-gradient-to-t from-black/50 to-transparent w-full h-full"></div>
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <span class="bg-blue-600 text-xs font-semibold px-2 py-1 rounded">#3</span>
+                                <h3 class="text-2xl font-bold mt-2">Дания</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                <span class="font-medium">9.6/10</span>
+                            </div>
+                            <span class="text-sm text-gray-500">Европа</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Лидер рейтинга самых счастливых стран с высоким уровнем равенства и качественной медициной.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Счастье</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Гик</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Дизайн</span>
+                        </div>
+                        <button onclick="window.location.href='Denmark.html'"
+                                class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg transition">
+                            Подробнее <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Country 4 -->
+                <div class="country-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <a href="Iceland.html" class="block">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1545048702-79362596cdc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                 alt="Исландия" class="w-full h-full object-cover">
+                            <div class="absolute top-0 left-0 bg-gradient-to-t from-black/50 to-transparent w-full h-full"></div>
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <span class="bg-blue-600 text-xs font-semibold px-2 py-1 rounded">#4</span>
+                                <h3 class="text-2xl font-bold mt-2">Исландия</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                <span class="font-medium">9.5/10</span>
+                            </div>
+                            <span class="text-sm text-gray-500">Европа</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Уникальная природа, гендерное равенство и один из самых низких уровней преступности в мире.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Природа</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Равенство</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Безопасность</span>
+                        </div>
+                        <button onclick="window.location.href='Iceland.html'"
+                                class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg transition">
+                            Подробнее <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Country 5 -->
+                <div class="country-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <a href="Finland.html" class="block">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1630&q=80"
+                                 alt="Финляндия" class="w-full h-full object-cover">
+                            <div class="absolute top-0 left-0 bg-gradient-to-t from-black/50 to-transparent w-full h-full"></div>
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <span class="bg-blue-600 text-xs font-semibold px-2 py-1 rounded">#5</span>
+                                <h3 class="text-2xl font-bold mt-2">Финляндия</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                <span class="font-medium">9.4/10</span>
+                            </div>
+                            <span class="text-sm text-gray-500">Европа</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Лучшая система образования в мире, чистый воздух и высокий уровень цифровизации.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Образование</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Экология</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Технологии</span>
+                        </div>
+                        <button onclick="window.location.href='Finland.html'"
+                                class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg transition">
+                            Подробнее <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Country 6 -->
+                <div class="country-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <a href="Netherlands.html" class="block">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+                                 alt="Нидерланды" class="w-full h-full object-cover">
+                            <div class="absolute top-0 left-0 bg-gradient-to-t from-black/50 to-transparent w-full h-full"></div>
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <span class="bg-blue-600 text-xs font-semibold px-2 py-1 rounded">#6</span>
+                                <h3 class="text-2xl font-bold mt-2">Нидерланды</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                <span class="font-medium">9.3/10</span>
+                            </div>
+                            <span class="text-sm text-gray-500">Европа</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Высокий уровень толерантности, развитая инфраструктура и качественное здравоохранение.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Толерантность</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Велосипеды</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Медицина</span>
+                        </div>
+                        <button onclick="window.location.href='Netherlands.html'"
+                                class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg transition">
+                            Подробнее <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Country 7 -->
+                <div class="country-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <a href="Canada.html" class="block">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                 alt="Канада" class="w-full h-full object-cover">
+                            <div class="absolute top-0 left-0 bg-gradient-to-t from-black/50 to-transparent w-full h-full"></div>
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <span class="bg-blue-600 text-xs font-semibold px-2 py-1 rounded">#7</span>
+                                <h3 class="text-2xl font-bold mt-2">Канада</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                <span class="font-medium">9.2/10</span>
+                            </div>
+                            <span class="text-sm text-gray-500">Северная Америка</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Просторная страна с высоким уровнем иммиграции, прекрасной природой и стабильной экономикой.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Иммиграция</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Природа</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Экономика</span>
+                        </div>
+                        <button onclick="window.location.href='Canada.html'"
+                                class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg transition">
+                            Подробнее <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Country 8 -->
+                <div class="country-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <a href="Australia.html" class="block">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1503917988258-f87a78e3c995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80"
+                                 alt="Австралия" class="w-full h-full object-cover">
+                            <div class="absolute top-0 left-0 bg-gradient-to-t from-black/50 to-transparent w-full h-full"></div>
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <span class="bg-blue-600 text-xs font-semibold px-2 py-1 rounded">#8</span>
+                                <h3 class="text-2xl font-bold mt-2">Австралия</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                <span class="font-medium">9.1/10</span>
+                            </div>
+                            <span class="text-sm text-gray-500">Океания</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Высокий уровень жизни, теплый климат и уникальная природа делают Австралию привлекательной.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Климат</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Океан</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Фауна</span>
+                        </div>
+                        <button onclick="window.location.href='Australia.html'"
+                                class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg transition">
+                            Подробнее <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Country 9 -->
+                <div class="country-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <a href="Sweden.html" class="block">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1535406208535-1429839cfd13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1476&q=80"
+                                 alt="Швеция" class="w-full h-full object-cover">
+                            <div class="absolute top-0 left-0 bg-gradient-to-t from-black/50 to-transparent w-full h-full"></div>
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <span class="bg-blue-600 text-xs font-semibold px-2 py-1 rounded">#9</span>
+                                <h3 class="text-2xl font-bold mt-2">Швеция</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                <span class="font-medium">9.0/10</span>
+                            </div>
+                            <span class="text-sm text-gray-500">Европа</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Социальное государство с высоким уровнем равенства, инновациями и заботой об экологии.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Инновации</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Экология</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Дизайн</span>
+                        </div>
+                        <button onclick="window.location.href='Sweden.html'"
+                                class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg transition">
+                            Подробнее <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Country 10 -->
+                <div class="country-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <a href="NewZealand.html" class="block">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1507699622108-4be3abd695ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+                                 alt="Новая Зеландия" class="w-full h-full object-cover">
+                            <div class="absolute top-0 left-0 bg-gradient-to-t from-black/50 to-transparent w-full h-full"></div>
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <span class="bg-blue-600 text-xs font-semibold px-2 py-1 rounded">#10</span>
+                                <h3 class="text-2xl font-bold mt-2">Новая Зеландия</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400 mr-1"></i>
+                                <span class="font-medium">8.9/10</span>
+                            </div>
+                            <span class="text-sm text-gray-500">Океания</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Уединенная страна с потрясающей природой, низкой плотностью населения и высоким качеством жизни.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Природа</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Экология</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Спокойствие</span>
+                        </div>
+                        <button onclick="window.location.href='NewZealand.html'"
+                                class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg transition">
+                            Подробнее <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Table -->
+        <section class="mt-16 bg-white rounded-xl shadow-md overflow-hidden">
+            <div class="p-6 border-b">
+                <h3 class="text-2xl font-bold text-gray-800">Сравнение стран по ключевым показателям</h3>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Страна</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">ИЧР</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">ВВП на душу ($)</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Ожид. жизнь</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Уровень счастья</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap font-medium">Швейцария</td>
+                            <td class="px-6 py-4 whitespace-nowrap">0.955</td>
+                            <td class="px-6 py-4 whitespace-nowrap">86,850</td>
+                            <td class="px-6 py-4 whitespace-nowrap">83.8</td>
+                            <td class="px-6 py-4 whitespace-nowrap">7.51</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium">Норвегия</td>
+                            <td class="px-6 py-4 whitespace-nowrap">0.954</td>
+                            <td class="px-6 py-4 whitespace-nowrap">82,240</td>
+                            <td class="px-6 py-4 whitespace-nowrap">82.4</td>
+                            <td class="px-6 py-4 whitespace-nowrap">7.37</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap font-medium">Дания</td>
+                            <td class="px-6 py-4 whitespace-nowrap">0.940</td>
+                            <td class="px-6 py-4 whitespace-nowrap">67,920</td>
+                            <td class="px-6 py-4 whitespace-nowrap">80.9</td>
+                            <td class="px-6 py-4 whitespace-nowrap">7.62</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium">Исландия</td>
+                            <td class="px-6 py-4 whitespace-nowrap">0.939</td>
+                            <td class="px-6 py-4 whitespace-nowrap">69,430</td>
+                            <td class="px-6 py-4 whitespace-nowrap">83.0</td>
+                            <td class="px-6 py-4 whitespace-nowrap">7.50</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap font-medium">Финляндия</td>
+                            <td class="px-6 py-4 whitespace-nowrap">0.938</td>
+                            <td class="px-6 py-4 whitespace-nowrap">53,650</td>
+                            <td class="px-6 py-4 whitespace-nowrap">81.9</td>
+                            <td class="px-6 py-4 whitespace-nowrap">7.80</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+<!-- Newsletter -->
+<section class="bg-blue-600 text-white py-12">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-4">Хотите получать новые рейтинги?</h2>
+        <p class="text-xl text-blue-100 max-w-2xl mx-auto mb-8">
+            Подпишитесь на нашу рассылку и будьте в курсе изменений в рейтингах лучших стран для жизни
+        </p>
+        <form action="https://formspree.io/f/xanjkwra" method="POST" class="max-w-md mx-auto flex">
+            <input type="email" name="email" required placeholder="Ваш email" class="flex-grow px-4 py-3 rounded-l-lg focus:outline-none text-gray-800">
+            <button type="submit" class="bg-blue-800 hover:bg-blue-900 px-6 py-3 rounded-r-lg font-medium transition">
+                Подписаться <i class="fas fa-paper-plane ml-2"></i>
+            </button>
+        </form>
+    </div>
+</section>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-globe-europe text-2xl text-blue-400 mr-2"></i> Лучшие страны
+                    </h3>
+                    <p class="text-gray-400">
+                        Мы помогаем найти идеальное место для жизни, работы и отдыха на основе объективных данных.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Рейтинги</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">По качеству жизни</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">По уровню счастья</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Для бизнеса</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Для пенсионеров</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Ресурсы</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Блог</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">FAQ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Методология</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Партнеры</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Контакты</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-blue-400 mr-2"></i>
+                            <span class="text-gray-400">info@best-countries.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone text-blue-400 mr-2"></i>
+                            <span class="text-gray-400">+1 (234) 567-890</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-blue-400 mr-2"></i>
+                            <span class="text-gray-400">Berlin, Germany</span>
+                        </li>
+                    </ul>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2023 Лучшие страны для жизни. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle functionality
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Newsletter form
+        const newsletterForm = document.querySelector('section.bg-blue-600');
+        const newsletterInput = newsletterForm.querySelector('input');
+        const newsletterButton = newsletterForm.querySelector('button');
+
+        newsletterButton.addEventListener('click', function() {
+            if (newsletterInput.value.includes('@')) {
+                alert('Спасибо за подписку! Мы отправили вам письмо с подтверждением.');
+                newsletterInput.value = '';
+            } else {
+                alert('Пожалуйста, введите корректный email адрес');
+            }
+        });
+    </script>
+</body>
+</html>

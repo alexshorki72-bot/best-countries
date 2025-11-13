@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Топ-10 стран для проживания - сравнение</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .country-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .flag-icon {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .comparison-table {
+            scrollbar-width: thin;
+            scrollbar-color: #3B82F6 #E5E7EB;
+        }
+        .comparison-table::-webkit-scrollbar {
+            height: 8px;
+        }
+        .comparison-table::-webkit-scrollbar-track {
+            background: #E5E7EB;
+            border-radius: 10px;
+        }
+        .comparison-table::-webkit-scrollbar-thumb {
+            background-color: #3B82F6;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <div class="container mx-auto px-4 py-12">
+        <!-- Header -->
+        <header class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Топ-10 стран для проживания</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Рейтинг основан на качестве жизни, экономической стабильности, безопасности, здравоохранении и уровне счастья населения
+            </p>
+        </header>
+
+        <!-- Comparison Section -->
+        <div class="bg-white rounded-xl shadow-md p-6 mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Сравнение стран</h2>
+            
+            <div class="overflow-x-auto comparison-table pb-4">
+                <table class="w-full min-w-max">
+                    <thead>
+                        <tr class="border-b border-gray-200">
+                            <th class="py-4 px-6 text-left font-semibold text-gray-700 whitespace-nowrap">Страна</th>
+                            <th class="py-4 px-6 text-center font-semibold text-gray-700 whitespace-nowrap">ВВП на душу ($)</th>
+                            <th class="py-4 px-6 text-center font-semibold text-gray-700 whitespace-nowrap">Медицина</th>
+                            <th class="py-4 px-6 text-center font-semibold text-gray-700 whitespace-nowrap">Образование</th>
+                            <th class="py-4 px-6 text-center font-semibold text-gray-700 whitespace-nowrap">Безопасность</th>
+                            <th class="py-4 px-6 text-center font-semibold text-gray-700 whitespace-nowrap">Экология</th>
+                            <th class="py-4 px-6 text-center font-semibold text-gray-700 whitespace-nowrap">Счастье</th>
+                            <th class="py-4 px-6 text-center font-semibold text-gray-700 whitespace-nowrap">Средняя зарплата ($)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <!-- Norway -->
+                        <tr class="hover:bg-gray-50 transition-colors">
+                            <td class="py-4 px-6 whitespace-nowrap">
+                                <div class="flex items-center">
+                                    <img src="https://flagcdn.com/w20/no.png" alt="Norway" class="w-6 h-4 mr-3">
+                                    <span class="font-medium">Норвегия</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6 text-center">82,240</td>
+                            <td class="py-4 px-6 text-center">
+                                <div class="flex justify-center">
+                                    <div class="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-green-500"></div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6 text-center">
+                                <div class="flex justify-center">
+                                    <div class="w-4 h-4 rounded-full bg-blue-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-blue-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-blue-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-blue-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-blue-500"></div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6 text-center">
+                                <div class="flex justify-center">
+                                    <div class="w-4 h-4 rounded-full bg-purple-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-purple-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-purple-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-purple-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-purple-500"></div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6 text-center">
+                                <div class="flex justify-center">
+                                    <div class="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-green-500"></div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6 text-center">7.4</td>
+                            <td class="py-4 px-6 text-center">5,500</td>
+                        </tr>
+                        
+                        <!-- Switzerland -->
+                        <tr class="hover:bg-gray-50 transition-colors">
+                            <td class="py-4 px-6 whitespace-nowrap">
+                                <div class="flex items-center">
+                                    <img src="https://flagcdn.com/w20/ch.png" alt="Switzerland" class="w-6 h-4 mr-3">
+                                    <span class="font-medium">Швейцария</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6 text-center">93,520</td>
+                            <td class="py-4 px-6 text-center">
+                                <div class="flex justify-center">
+                                    <div class="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-green-500"></div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6 text-center">
+                                <div class="flex justify-center">
+                                    <div class="w-4 h-4 rounded-full bg-blue-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-blue-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-blue-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-blue-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-blue-500"></div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6 text-center">
+                                <div class="flex justify-center">
+                                    <div class="w-4 h-4 rounded-full bg-purple-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-purple-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-purple-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-purple-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-purple-500"></div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6 text-center">
+                                <div class="flex justify-center">
+                                    <div class="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-gray-300"></div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6 text-center">7.5</td>
+                            <td class="py-4 px-6 text-center">6,200</td>
+                        </tr>
+                        
+                        <!-- Denmark -->
+                        <tr class="hover:bg-gray-50 transition-colors">
+                            <td class="py-4 px-6 whitespace-nowrap">
+                                <div class="flex items-center">
+                                    <img src="https://flagcdn.com/w20/dk.png" alt="Denmark" class="w-6 h-4 mr-3">
+                                    <span class="font-medium">Дания</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6 text-center">68,090</td>
+                            <td class="py-4 px-6 text-center">
+                                <div class="flex justify-center">
+                                    <div class="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-green-500"></div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6 text-center">
+                                <div class="flex justify-center">
+                                    <div class="w-4 h-4 rounded-full bg-blue-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-blue-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-blue-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-blue-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-blue-500"></div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6 text-center">
+                                <div class="flex justify-center">
+                                    <div class="w-4 h-4 rounded-full bg-purple-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-purple-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-purple-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-purple-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-purple-500"></div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6 text-center">
+                                <div class="flex justify-center">
+                                    <div class="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-gray-300"></div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6 text-center">7.6</td>
+                            <td class="py-4 px-6 text-center">4,800</td>
+                        </tr>
+                        
+                        <!-- Sweden -->
+                        <tr class="hover:bg-gray-50 transition-colors">
+                            <td class="py-4 px-6 whitespace-nowrap">
+                                <div class="flex items-center">
+                                    <img src="https://flagcdn.com/w20/se.png" alt="Sweden" class="w-6 h-4 mr-3">
+                                    <span class="font-medium">Швеция</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6 text-center">61,020</td>
+                            <td class="py-4 px-6 text-center">
+                                <div class="flex justify-center">
+                                    <div class="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-green-500"></div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6 text-center">
+                                <div class="flex justify-center">
+                                    <div class="w-4 h-4 rounded-full bg-blue-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-blue-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-blue-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-blue-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-blue-500"></div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6 text-center">
+                                <div class="flex justify-center">
+                                    <div class="w-4 h-4 rounded-full bg-purple-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-purple-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-purple-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-purple-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-gray-300"></div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6 text-center">
+                                <div class="flex justify-center">
+                                    <div class="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-green-500"></div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6 text-center">7.3</td>
+                            <td class="py-4 px-6 text-center">4,500</td>
+                        </tr>
+                        
+                        <!-- Finland -->
+                        <tr class="hover:bg-gray-50 transition-colors">
+                            <td class="py-4 px-6 whitespace-nowrap">
+                                <div class="flex items-center">
+                                    <img src="https://flagcdn.com/w20/fi.png" alt="Finland" class="w-6 h-4 mr-3">
+                                    <span class="font-medium">Финляндия</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6 text-center">53,660</td>
+                            <td class="py-4 px-6 text-center">
+                                <div class="flex justify-center">
+                                    <div class="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-green-500"></div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6 text-center">
+                                <div class="flex justify-center">
+                                    <div class="w-4 h-4 rounded-full bg-blue-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-blue-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-blue-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-blue-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-blue-500"></div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6 text-center">
+                                <div class="flex justify-center">
+                                    <div class="w-4 h-4 rounded-full bg-purple-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-purple-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-purple-500 mr-1"></div>
+                                    <div class="w-4 h-4 rounded-full bg-purple-500 mr-1"></div>
+                                    <div class="极速赛车开奖直播官网
+</html>
